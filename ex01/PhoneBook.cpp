@@ -6,11 +6,11 @@
 /*   By: afarachi <afarachi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/15 12:32:37 by afarachi          #+#    #+#             */
-/*   Updated: 2024/09/16 04:09:43 by afarachi         ###   ########.fr       */
+/*   Updated: 2024/09/16 05:28:36 by afarachi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/PhoneBook.hpp"
+#include "PhoneBook.hpp"
 
 
 PhoneBook::PhoneBook(void) : currentIndex(0), contactCount(0) {}

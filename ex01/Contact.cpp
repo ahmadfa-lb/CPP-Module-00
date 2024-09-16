@@ -6,11 +6,11 @@
 /*   By: afarachi <afarachi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/15 12:07:44 by afarachi          #+#    #+#             */
-/*   Updated: 2024/09/15 17:21:03 by afarachi         ###   ########.fr       */
+/*   Updated: 2024/09/16 05:28:16 by afarachi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/Contact.hpp"
+#include "Contact.hpp"
 
 Contact::Contact(void) {}
 Contact::~Contact(void) {}
