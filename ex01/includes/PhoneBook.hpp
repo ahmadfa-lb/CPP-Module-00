@@ -6,7 +6,7 @@
 /*   By: afarachi <afarachi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/15 12:32:28 by afarachi          #+#    #+#             */
-/*   Updated: 2024/09/15 16:27:44 by afarachi         ###   ########.fr       */
+/*   Updated: 2024/09/16 03:57:22 by afarachi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include <cstdlib>
 #include <iomanip>
 #include <cctype>
+#include <limits>
 
 class PhoneBook
 {

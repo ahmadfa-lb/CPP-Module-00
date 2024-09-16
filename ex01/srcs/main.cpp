@@ -6,7 +6,7 @@
 /*   By: afarachi <afarachi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/15 14:08:11 by afarachi          #+#    #+#             */
-/*   Updated: 2024/09/15 17:19:01 by afarachi         ###   ########.fr       */
+/*   Updated: 2024/09/16 04:07:49 by afarachi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,15 @@ int main()
 {
 	PhoneBook pBook;
 	std::string userInput;
+	std::cout << std::endl;
+	std::cout << "\033[35mWelcome to My Awesome PhoneBook® ✨!!" << std::endl;
+	std::cout << "\033[35m-------------------------------------" << std::endl;
+	std::cout << std::endl;
 	while (1)
 	{
 		userInput.clear();
 		std::cout << "\033[33m$⫸\033[0m";
 		std::getline(std::cin, userInput);
-		//std::cout << std::endl;
 		
 		if (std::cin.eof() == true) //to avoid the infinite loop if ctrl d is pressed
 		{
@@ -41,22 +44,18 @@ int main()
 		else if (userInput.compare("ADD") == 0)
 			pBook.addContact();
 		else if (userInput.compare("SEARCH") == 0)
-		{
 			pBook.searchContacts();
-		userInput.clear();
-	
-		}
 		else if (userInput == "EXIT")
 			break ;	
-		// else
-		// {
-		// 	std::cout << "\033[33m$⫸\033[0m✕❌✕ \033[31mWRONG INPUT\033[0m ✕❌✕" << std::endl;	
-		// 	
-		// }
-		showOptions();
+		else
+		{
+			std::cout << "\033[33m$⫸\033[0m✕❌✕ \033[31mWRONG INPUT\033[0m ✕❌✕" << std::endl;	
+			showOptions();
+		}
 		userInput.clear();
-		
 	}
+	std::cout << std::endl;
 	std::cout << "\033[35mThankyou for using My Awesome PhoneBook® ✨!!" << std::endl;
+	std::cout << std::endl;
 	return (0);
 }

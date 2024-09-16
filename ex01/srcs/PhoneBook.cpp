@@ -6,7 +6,7 @@
 /*   By: afarachi <afarachi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/15 12:32:37 by afarachi          #+#    #+#             */
-/*   Updated: 2024/09/15 17:23:06 by afarachi         ###   ########.fr       */
+/*   Updated: 2024/09/16 04:09:43 by afarachi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -122,7 +122,7 @@ void PhoneBook::searchContacts() const
         std::cout << "PhoneBook is empty. No contacts to display." << std::endl;
         return;
     }
-
+    std::cout << std::endl;
     std::cout << std::setw(10) << "Index" << "|"
               << std::setw(10) << "First Name" << "|"
               << std::setw(10) << "Last Name" << "|"
@@ -144,11 +144,11 @@ void PhoneBook::searchContacts() const
     if (std::cin.fail() || index < 1 || index > contactCount)
     {
         std::cin.clear();
-        //std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Discard invalid input
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         std::cout << "Error: Invalid index!" << std::endl;
     }
     else
         contacts[index - 1].displayContact();
+    std::cin.clear();
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 }
-
-
